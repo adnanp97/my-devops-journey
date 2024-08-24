@@ -2,7 +2,7 @@
 ### Linux Operating System and Kernels basics
 
 **What is Linux?**
-Linus is operating sysyem. Operating systems allow you to interact and send instruction to hardware via a kernel.
+Linus is operating sysyem. An operating system is softwre which allows you to interact and send instruction to hardware via a kernel.
 
 **User Interaction:** 
 The user interacts with the operating system (OS). This interaction can be through a graphical user interface (GUI) with windows and icons or a command-line interface (CLI) with text commands.
