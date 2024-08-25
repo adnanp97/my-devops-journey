@@ -1,6 +1,6 @@
 # Linux notes
 ### Linux Operating System and Kernels basics
-
+---
 **What is Linux?**
 Linus is operating sysyem. An operating system is softwre which allows you to interact and send instruction to hardware via a kernel.
 
@@ -22,7 +22,14 @@ So, the kernel does the actual work of interacting with the hardware based on th
 My understanding:
 A user interacts with an operating system (software e.g. Linux), this operation system has a kernel. When a person interacts with the operating system, the real work is done by the kernel which interacts with the actual hardware. 
 
+**What is command line interface (CLI) for?**
+The CLI allows you to interact with OS by typing commands. You can run scripts, exceute commands and manage system effeciently.
+
+Your command is interpretted by the shell. **Your input is a command and the result is the standard output.**
+
 **Note: Without an operating system or kernel, you will not be able to interact with the hardware**
 - No operating system means there will be not interface to interact with the computer.
 - No kernel means tasks will not get excetued as the kernel is what tells the hardware (like the CPU, memory, and storage) how to work together. Without it, your computer wouldn’t know how to use its parts.
+
+  
 ---
