@@ -27,6 +27,8 @@ The CLI allows you to interact with OS by typing commands. You can run scripts, 
 
 Your command is interpretted by the shell. **Your input is a command and the result is the standard output.**
 
+**The purpose of a shell is** to serve as a command-line interface between the user and the operating system. It allows you to interact with the system by typing commands, which the shell interprets and executes.
+
 **Note: Without an operating system or kernel, you will not be able to interact with the hardware**
 - No operating system means there will be not interface to interact with the computer.
 - No kernel means tasks will not get excetued as the kernel is what tells the hardware (like the CPU, memory, and storage) how to work together. Without it, your computer wouldn’t know how to use its parts.
