@@ -21,6 +21,7 @@ So, the kernel does the actual work of interacting with the hardware based on th
 
 My understanding:
 A user interacts with an operating system (software e.g. Linux), this operation system has a kernel. When a person interacts with the operating system, the real work is done by the kernel which interacts with the actual hardware. 
+---
 
 ### Intro to command line interface (CLI) and shell
 
