@@ -13,7 +13,7 @@ The operating system includes the kernel, which is the core part of the OS. The 
 **Kernel and Hardware:** 
 When the user performs an action, such as opening a file or running an application, the OS translates these actions into requests that the kernel processes. The kernel then communicates with the hardware to complete these tasks.
 
-**In Summary:**
+**Summary:**
 User → Interacts with the OS.
 OS → Includes the Kernel.
 Kernel → Handles hardware interactions and executes tasks.
@@ -21,6 +21,7 @@ So, the kernel does the actual work of interacting with the hardware based on th
 
 My understanding:
 A user interacts with an operating system (software e.g. Linux), this operation system has a kernel. When a person interacts with the operating system, the real work is done by the kernel which interacts with the actual hardware. 
+
 ---
 
 ### Intro to command line interface (CLI) and shell
