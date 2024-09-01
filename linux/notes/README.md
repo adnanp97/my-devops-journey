@@ -57,10 +57,19 @@ Binary: compiled version of prgram that computer can run directly.
 - Shell searches for program in certain directories on computer which are listed in the path environment variables.
 - Once ls program is found, it runs/executes it and lists the content.
 
-
-
-
-
-
-  
 ---
+Vim stuff [place hold]
+
+DevOps care about Nginx because it helps manage web traffic efficiently. It can serve as a reverse proxy, which means it sits between users and web servers, directing user requests to the right server and improving speed and security.
+
+Example: Imagine Nginx as a receptionist in a busy office. When people (users) walk in (make requests), the receptionist (Nginx) directs them to the correct office (server) without them needing to know exactly where to go. This makes everything run smoothly.
+---
+
+
+
+
+### Binary, Octal and String Representation!
+---
+![Screenshot 2024-09-01 at 14 21 09](https://github.com/user-attachments/assets/2146e65b-92bf-4cc1-93f5-967871a5b17a)
+![Screenshot 2024-09-01 at 14 25 52](https://github.com/user-attachments/assets/2dc8797e-716d-4f87-b7c6-76fb080a1086)
+
