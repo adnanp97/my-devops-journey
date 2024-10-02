@@ -20,5 +20,8 @@ Git workflow
 - local repo has a working directory 
 - then placed in staging area (Git add .)
 - then Git commit
+- then push it to git (Git push pushes it to remote repo)
 
-  
+![Screenshot 2024-10-02 at 22 31 47](https://github.com/user-attachments/assets/6aa3f09a-dfca-4a9e-a194-0ac439d03026)
+
+git status : shows you your branch and see changes to be committed and modified
