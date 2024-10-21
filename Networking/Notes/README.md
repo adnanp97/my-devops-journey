@@ -160,8 +160,11 @@ Handshake is a 3 step process:
 ![Screenshot 2024-10-22 at 00 33 08](https://github.com/user-attachments/assets/c5123801-6a5e-4ea7-a5ca-9d754b575675)
 
 --- 
+## Introduciton to OSI Model
 
-
+OSI Model (Open systems interconnection) model
+- explains and allows us to understand how data is shared between 2 devices
+- 7 layers
   
 
 
