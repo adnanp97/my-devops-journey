@@ -72,8 +72,38 @@ WAN
 ### IP Addressing 
 - An IP address - unique for devises on a network
 - Allows devices to locate and communicate
+- The two types are IPv4 and IPv6
 
 ### IP Addressing (IPv4 & IPv6)
+#### IPv4
+- 192.168.0.5
+- 32-bit address
+- Format: four decinmal numbers separated by dots
+- each group ranges from 0 to 255 providing around 4.3 billion unique addresses (rapid growth means we need IPv6)
+
+#### IPv6
+- 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+- 128-bit address
+- Format: eight groups of four hexadecimal digits separate by colons
+- More enhanced: security and simplified address assignment
+
+It is essential to transition into IPv6 due to continual growth of the internet.
+Without IP Addresses, devices would not know where to send or receive data
+
+### MAC Address (media access controll address)
+- Unique identifer assigned to network interfaces.
+- Each device on a network has its own unique MAC address
+- importance - essential for network communication and security
+- 48-bit address e.g. 00:1A:2B:3C:4D:5E
+- operates at the datalink layer (Data link layer is responsibile for node ot node transfer)
+- faciliates device identification within a local network (devices can identify each other e.g. your laptop connects to right router and not neighbours)
+- without MAC addresses - critical for security and communication; devices would not be able to communicate properly. Help manage and control access to a network, ensuring data pakcets gets sent to the right place.
+---
+
+## Ports & Protocols: TCP, UDP
+
+
+
 
 
 
