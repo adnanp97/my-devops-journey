@@ -81,4 +81,32 @@ Doubts: don't fully understand how pull requests guarantees the above, I thought
 Merge conflicts
 - make sure to do git pull to avoid this as you will be working on an old version of a code leading to conflicts
 - happens when git cannot reconcile differences between two commits and needs manual resolution
-- 
+
+Rebasing and force pushing
+- we rebase to moves entire branch to the top of another branch
+- need to update the remote brach after base
+'git rebase main' -> shows updates to main branch in VS code
+'ggit push --force-with-lease' the --force-with-lease adds a safety layer, checks if remote branch has been update since you last pull or fetched
+
+
+Squashing commits
+- combines multiple commits into a single commit
+- simpler and cleaner history
+- easier to review changes
+
+git rebase -i HEAD~
+
+this will open up vim, there are 5 commands: Pick (p), Reword (r), Edit (e), Squash (s), Fixup (f).
+We would add p to the first commit and s to the following one. Then after :wq, update commit message. Then git push --force-with-lease
+
+Git ignore files
+- tells git which files or dir to ignore and does not want them to track, might be too larger or contain sensitive info
+- keeps repo clean
+- ignore logs and debug outputs
+- keeps temp files
+
+
+
+
+
+  
