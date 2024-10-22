@@ -165,11 +165,22 @@ Handshake is a 3 step process:
 OSI Model (Open systems interconnection) model
 - explains and allows us to understand how data is shared between 2 devices
 - 7 layers
-  
-
-
-
-
-
-
 ---
+## The 7-layers of the OSI Model
+### why do we need a communication model
+- it provides a standard framework which simplifies the way devices and apps communicate over a network
+- Application independence (independent of network) - without a standard model, apps must understand the underlying network
+- Simplified network equipment management - upgrading network equipment is difficult without a standard model
+- decoupled innovation - updates can happen on each layer independently without affecting entire system
+
+## The 7 layers
+### Application layer:
+- End user layer
+- HTTP, FTP, IRC, SSH, DNS
+### Presentaion layer:
+- syntax user layer
+- SSL, SSH, IMAP, FTP, MPEG, JPEG
+- Data is translated into a readable format and where encyprtion is handed
+### Session layer
+
+
