@@ -31,9 +31,12 @@ Collaboration: members of team, deploying to same infrastructure, each pushing d
 # what is terraform?
 - IaC tool
 - cloud agnostic
-
-practioner -> deployes IaC -> runs a terraform plan (plan - tells you what code is trying to do. compares current IaC attempted to get desired stared compared with current state) -> then run apply (applies IaC code) -> resources deployed in the cloud (includes the creation, updating and versioning of these resources)
+- practioner -> deployes IaC -> runs a terraform plan (plan - tells you what code is trying to do. compares current IaC attempted to get desired stared compared with current state) -> then run apply (applies IaC code) -> resources deployed in the cloud (includes the creation, updating and versioning of these resources)
 ---
 # Tips for using terraform
-- terraform documentation
-
+- terraform documentation https://developer.hashicorp.com/terraform/tutorials?product_intent=terraform
+- testing and validation
+- start with a small MVP (minimum viable product) and then iterate (configure resource that you need in order to deploy into cloud and then iterate e.g. add variables, make modules)
+- Implement Dry software engineering principle (less duplicates e.g. use modules)
+---
+# download terraform
