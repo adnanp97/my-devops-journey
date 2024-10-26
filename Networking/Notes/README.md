@@ -1,186 +1,184 @@
-Introduction to computer networks
-- group of devices connected to each other allowing them to share info and resources
-
-Local area network (LAN)
-- samll covers small are
-- Example home wifi
-
-Widde area network WAN
-- internet is an example
+# README: Introduction to Computer Networks
 
 ---
 
-### Importance in modern infrastructure
+## Introduction to Computer Networks
 
-Foundation - enables communication between devices
+- A **computer network** is a group of devices connected to each other, allowing them to share information and resources.
 
-Resource sharing - Facilitates sharing of files printers and more
+### Local Area Network (LAN)
 
-Internet functionality - critical for browsing, streaming and communication
+- Covers a small area, like a home or office.
+- **Example:** Home Wi-Fi.
 
-Application support - backbone for app connectivity and data transfer
+### Wide Area Network (WAN)
 
-
-### Netorking in DevOps
-
-Server interation - enables communication between servers and applications
-
-Deployment - critical for launching and updating applicaitons
-
-Management - cruical in monitioning and managing infrastructure
-
-Opimisation - enhances troublue shooting, performance and scalability (data moving smooth and fast between devices)
+- Covers a large area, such as a city or country.
+- **Example:** The internet.
 
 ---
 
-## Network basics and types of networks - LAN & WAN etc
+## Importance in Modern Infrastructure
+
+- **Foundation**: Enables communication between devices.
+- **Resource Sharing**: Facilitates sharing of files, printers, and more.
+- **Internet Functionality**: Essential for browsing, streaming, and communication.
+- **Application Support**: Backbone for app connectivity and data transfer.
+
+---
+
+## Networking in DevOps
+
+- **Server Interaction**: Enables communication between servers and applications.
+- **Deployment**: Crucial for launching and updating applications.
+- **Management**: Vital in monitoring and managing infrastructure.
+- **Optimization**: Enhances troubleshooting, performance, and scalability (ensures data moves smoothly between devices).
+
+---
+
+## Network Basics and Types of Networks - LAN & WAN
 
 ### Types of Networks
 
-LAN
-- small area e.g. home or office
-- connects devices to share resource
-- connects devices in a single locaiton e.g. printers, computers, internet access in a small area
+**LAN**  
+- Covers a small area, like a home or office.
+- Connects devices to share resources (e.g., printers, computers, internet access).
 
-WAN
-- best example is internet which connects devices globally
-- Large area e.g. citym country, larger region
+**WAN**  
+- Connects devices across large areas (city, country, or larger region).
+- **Example:** The internet, which connects devices globally.
 
 ---
-## Switches, routers and firewalls
+
+## Switches, Routers, and Firewalls
 
 ### Switches
-- think of it as a manager of your LAN
-- Connect devices within the same network e.g. cpu, printers
-- Manage data flow within a LAN
-- switches ensures data flows smoothly between these devices
-
+- Acts as a manager within a **LAN**.
+- Connects devices within the same network (e.g., computers, printers).
+- Ensures data flows smoothly between devices within the LAN.
 
 ### Routers
-- like a traffic warden for a network e.g. router connets home network to internet. ensures data gets to the correct location, whether you are browsing, streaming etc.
-- main role is to direct traffic between networks
-- connect different networks e.g. home network to internet
-
-
+- Manages traffic between networks, such as a home network and the internet.
+- Ensures data reaches the correct destination (e.g., while browsing or streaming).
+  
 ### Firewalls
-- acts as a bodyguard for your network
-- Protect networks from unauthorised access
-- monitors and controls incoming and outgoing network traffic based on predetermined security rules
+- Protects the network from unauthorized access.
+- Monitors and controls incoming and outgoing network traffic based on security rules.
+
 ---
-## IP address (Internet protocol address) & MAC address
 
-### IP Addressing 
-- An IP address - unique for devises on a network
-- Allows devices to locate and communicate
-- The two types are IPv4 and IPv6
+## IP Address (Internet Protocol Address) & MAC Address
 
-### IP Addressing (IPv4 & IPv6)
+### IP Addressing
+- An **IP address** uniquely identifies devices on a network, allowing them to locate and communicate with each other.
+- **Types**: IPv4 and IPv6.
+
 #### IPv4
-- 192.168.0.5
-- 32-bit address
-- Format: four decinmal numbers separated by dots
-- each group ranges from 0 to 255 providing around 4.3 billion unique addresses (rapid growth means we need IPv6)
+- **Example:** 192.168.0.5 (32-bit address).
+- Four decimal numbers separated by dots (0–255), with around 4.3 billion unique addresses.
 
 #### IPv6
-- 2001:0db8:85a3:0000:0000:8a2e:0370:7334
-- 128-bit address
-- Format: eight groups of four hexadecimal digits separate by colons
-- More enhanced: security and simplified address assignment
+- **Example:** 2001:0db8:85a3:0000:0000:8a2e:0370:7334 (128-bit address).
+- Eight groups of four hexadecimal digits separated by colons, providing enhanced security and more unique addresses.
 
-It is essential to transition into IPv6 due to continual growth of the internet.
-Without IP Addresses, devices would not know where to send or receive data
+### MAC Address (Media Access Control Address)
+- A unique identifier for network interfaces, operating at the Data Link layer.
+- **Example:** 00:1A:2B:3C:4D:5E (48-bit address).
+- Facilitates device identification within a local network and is essential for security and communication.
 
-### MAC Address (media access controll address)
-- Unique identifer assigned to network interfaces.
-- Each device on a network has its own unique MAC address
-- importance - essential for network communication and security
-- 48-bit address e.g. 00:1A:2B:3C:4D:5E
-- operates at the datalink layer (Data link layer is responsibile for node ot node transfer)
-- faciliates device identification within a local network (devices can identify each other e.g. your laptop connects to right router and not neighbours)
-- without MAC addresses - critical for security and communication; devices would not be able to communicate properly. Help manage and control access to a network, ensuring data pakcets gets sent to the right place.
 ---
+
 ## Ports & Protocols: TCP, UDP
 
-### What are ports?
-- Logical end points for communicaiton
-- think of it as a logical door on a device, each door is numbered and each number is used for a specific type of network communication e.g. web traffic typically goes through port 80 which is HTTP and port 443 for HTTPs
-- these ports help faciliate communication between devices
-- When your device wants to send/receive data, it uses ports to make sure the data goes to the right place.
+### What Are Ports?
+- **Ports** are logical endpoints for communication, each assigned a specific number for different types of network communication.
+- **Examples**: Port 80 for HTTP, Port 443 for HTTPS.
 
-### What are protocols?
-- rules governing data transmission
-- think of it as rules of the road for data transmission
-- they define how data is formatted and transmitted across a network
-- common protocols exmaples: HTTP, FTP, SMTP etc
-- they ensure devices can communicate effectively by following the same set of rules (think of it as a language devices uses to communicate)
+### What Are Protocols?
+- **Protocols** are rules governing data transmission, ensuring data is formatted and transmitted correctly.
+- **Examples**: HTTP, FTP, SMTP.
 
-### Why are protocols important?
-- faciliates communication between devices
-- Ensures data gets to the right app on your device
-- Esures data is understandable and properly formatted, they are essential for smooth and efficient communication.
-- smooth and efficient communication
-
-### TCP (Transmission contorl protocol)
-- It is like the postman of the internet
-- ensure data sent from one device reaches another device accurately and in the correct order
-- set of rules that devices follow to communicate with eachother
+### TCP (Transmission Control Protocol)
+- Ensures data sent from one device reaches another device accurately and in order.
 
 ### Characteristics of TCP
-- it is connection oriented (a connection must be established before any data is sent between 2 devices e.g. a phone call, you must dial and connect before speaking)
-- requires a 'handshake' - a process in which 2 devices agree to communicate
-- handshake is a 3 step process to ensure both devices are ready to share data
-- reliable data transfer - ensures all data sent is received correctly on the other end
-- reliable - If any data is lost/corrupted, it will send it again.
+- **Connection-Oriented**: Establishes a connection before data transmission.
+- **Reliable**: Provides error checking and retransmits data if lost or corrupted.
 
-### Function/Use cases of TCP
-- Ensures data is delivered in order e.g. sending many messages, you want it to be in order
-- error checking and flow control - checks for errors in the data and controls the flow of data to prevent congestion (ensures smooth and error free communicaiton)
-- Any biderectional communication - used whenever two devices need to exchange data back and forth e.g. web browsing, emails and file transfers
+### Functions/Use Cases of TCP
+- Suitable for bidirectional communication, such as web browsing, emails, and file transfers.
 
-Handshake is a 3 step process:
-- 
+### UDP (User Datagram Protocol)
+- A faster, connectionless protocol suitable for real-time apps where speed is more critical than reliability.
 
-### What is UDP (User Datagram Protocol)
-- Simple protocol used to send/reecive data
-- Unlike TCP, UDP is connectionless
+### Functions/Use Cases of UDP
+- Used in online gaming, video streaming, and some VPN protocols.
 
-### Characteristics of UDP
-- simple protocol to share data (quick and easy to use)
-- prior communication not required (can be adouble-edged sword) - Pro: data can be sent immedaitely without waiting to establish a connection. Con: no guarantee data will reach destination
-- connectionless - no connection needs to be created between sender and receiver, each packet is sent independently.
-- Fast but less reliable - no connection setup and less error checking, UDP is faster than TCP. Speed over accuracy
+### TCP vs. UDP
 
-### Functions and use cases for UDP
-- Suitable for real-time apps such as online gaming, videos and streaming (speed is more important than reliability)
-- DNS, DNS lookups, DNS queries and anything DNS related uses UDP behind the scenes.
-- VPN (Virtual private networks) - some VPN protocols use UDP because it is faster and works better for streaming and real time apps
+![TCP vs. UDP](https://github.com/user-attachments/assets/c5123801-6a5e-4ea7-a5ca-9d754b575675)
 
-
-### TCP vs UDP
-![Screenshot 2024-10-22 at 00 33 08](https://github.com/user-attachments/assets/c5123801-6a5e-4ea7-a5ca-9d754b575675)
-
---- 
-## Introduciton to OSI Model
-
-OSI Model (Open systems interconnection) model
-- explains and allows us to understand how data is shared between 2 devices
-- 7 layers
 ---
-## The 7-layers of the OSI Model
-### why do we need a communication model
-- it provides a standard framework which simplifies the way devices and apps communicate over a network
-- Application independence (independent of network) - without a standard model, apps must understand the underlying network
-- Simplified network equipment management - upgrading network equipment is difficult without a standard model
-- decoupled innovation - updates can happen on each layer independently without affecting entire system
 
-## The 7 layers
-### Application layer:
-- End user layer
-- HTTP, FTP, IRC, SSH, DNS
-### Presentaion layer:
-- syntax user layer
-- SSL, SSH, IMAP, FTP, MPEG, JPEG
-- Data is translated into a readable format and where encyprtion is handed
-### Session layer
+## Introduction to OSI Model
 
+The **OSI Model** (Open Systems Interconnection) provides a standard framework for understanding how data is shared between devices in seven layers.
 
+---
+
+## The 7 Layers of the OSI Model
+
+### Why We Need a Communication Model
+
+- **Standard Framework**: Simplifies device and app communication.
+- **Application Independence**: Applications operate independently of the underlying network.
+- **Simplified Network Management**: Facilitates easier upgrades.
+- **Decoupled Innovation**: Allows updates on each layer independently.
+
+### OSI Layers
+
+#### Layer 7: Application Layer
+- Directly provides network services to applications (e.g., HTTP, FTP, DNS).
+
+#### Layer 6: Presentation Layer
+- Translates data into a readable format and handles encryption.
+
+#### Layer 5: Session Layer
+- Manages sessions between applications, establishing and terminating connections.
+
+#### Layer 4: Transport Layer
+- Ensures end-to-end communication and data integrity (e.g., TCP, UDP).
+
+#### Layer 3: Network Layer
+- Manages packet routing and forwarding (e.g., IP, ICMP).
+
+#### Layer 2: Data Link Layer
+- Ensures node-to-node data transfer and error detection (e.g., Ethernet, MAC addresses).
+
+#### Layer 1: Physical Layer
+- Transmits raw bit streams over a physical medium (e.g., cables, wireless signals).
+
+---
+
+## Layer Details
+
+### Layer 1: Physical Layer
+- **Function**: Transmit raw bit streams over physical media (e.g., cables, network interface cards).
+
+### Layer 2: Data Link Layer
+- **Function**: Ensures node-to-node data transfer and detects errors from the physical layer.
+
+### Layer 3: Network Layer
+- **Function**: Routes data packets to the recipient, managing paths through intermediate routers.
+
+### Layer 4: Transport Layer
+- **Function**: Provides reliable data transfer services, segmenting and reassembling data as needed.
+
+### Layer 5: Session Layer
+- **Function**: Manages sessions between applications, establishing, maintaining, and terminating connections.
+
+### Layer 6: Presentation Layer
+- **Function**: Translates data into a usable format and handles encryption.
+
+### Layer 7: Application Layer
+- **Function**: Directly provides network services to applications.
