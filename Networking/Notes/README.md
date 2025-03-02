@@ -8,7 +8,7 @@
 
 ### Local Area Network (LAN)
 
-- Covers a small area, like a home or office.
+- Covers a small area, like a home or office. Can communicate 
 - **Example:** Home Wi-Fi.
 
 ### Wide Area Network (WAN)
@@ -42,11 +42,13 @@
 
 **LAN**  
 - Covers a small area, like a home or office.
-- Connects devices to share resources (e.g., printers, computers, internet access).
+- Connects devices to share resources (e.g., printers, computers, internet access in small area).
 
 **WAN**  
 - Connects devices across large areas (city, country, or larger region).
+- Connects multiple LANs
 - **Example:** The internet, which connects devices globally.
+
 
 ---
 
@@ -59,11 +61,13 @@
 
 ### Routers
 - Manages traffic between networks, such as a home network and the internet.
+- Connects different networks e.g. home network to internet.
 - Ensures data reaches the correct destination (e.g., while browsing or streaming).
   
 ### Firewalls
 - Protects the network from unauthorized access.
 - Monitors and controls incoming and outgoing network traffic based on security rules.
+- Monitors network traffic to enhance security
 
 ---
 
@@ -76,15 +80,18 @@
 #### IPv4
 - **Example:** 192.168.0.5 (32-bit address).
 - Four decimal numbers separated by dots (0–255), with around 4.3 billion unique addresses.
+- too much demand making IPv4 scarce and moving into IPv6
 
 #### IPv6
 - **Example:** 2001:0db8:85a3:0000:0000:8a2e:0370:7334 (128-bit address).
 - Eight groups of four hexadecimal digits separated by colons, providing enhanced security and more unique addresses.
+- provides simple address assignment
 
 ### MAC Address (Media Access Control Address)
 - A unique identifier for network interfaces, operating at the Data Link layer.
 - **Example:** 00:1A:2B:3C:4D:5E (48-bit address).
 - Facilitates device identification within a local network and is essential for security and communication.
+- Operate on datalink layer (responsible for node to node transfer)
 
 ---
 
@@ -95,24 +102,38 @@
 - **Examples**: Port 80 for HTTP, Port 443 for HTTPS.
 
 ### What Are Protocols?
-- **Protocols** are rules governing data transmission, ensuring data is formatted and transmitted correctly.
+- **Protocols** are rules governing data transmission, ensuring data is formatted and transmitted correctly across a network.
+- devices communication effectively by following the same set of rules. (e.g. devices must speak same language to understand eachother)
 - **Examples**: HTTP, FTP, SMTP.
 
 ### TCP (Transmission Control Protocol)
 - Ensures data sent from one device reaches another device accurately and in order.
+- Set of rules devices follow to communicate with each other.
 
 ### Characteristics of TCP
 - **Connection-Oriented**: Establishes a connection before data transmission.
-- **Reliable**: Provides error checking and retransmits data if lost or corrupted.
+- **hand shake**: the two devices agree to communicate.
+- **Reliable**: Provides error checking and retransmits data if lost or corrupted. Ensures data sent gets received.
 
 ### Functions/Use Cases of TCP
-- Suitable for bidirectional communication, such as web browsing, emails, and file transfers.
+- Suitable for bidirectional communication (when 2 devices need to exchange data back and forth) e.g. such as web browsing, emails, and file transfers.
+- Ensure data is delivered in order.
+- Error checking and flow control to prvent congestion.
 
 ### UDP (User Datagram Protocol)
 - A faster, connectionless protocol suitable for real-time apps where speed is more critical than reliability.
 
+### UDP Characteristics
+- Simple protocol to send and receive data
+- Priot comminication not required (has cons e.g. data can be sent immediately without establishing a connection, however there is no guarantee data reached desired location)
+- connectionaless: no formal connection established between sender and receiver. Each packet is sent independently.
+- Fast but less reliable. No guarantee packets are delivered in order.
+- No error checking or flow control, what you send is what you get (errors included).
+
 ### Functions/Use Cases of UDP
-- Used in online gaming, video streaming, and some VPN protocols.
+- Used for real time application e.g. in online gaming, video streaming, and some VPN protocols.
+- DNS (use udp behind the scenes)
+- Some VPN use udp because it is faster and works better for streaming and real time applications
 
 ### TCP vs. UDP
 
