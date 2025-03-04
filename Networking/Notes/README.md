@@ -151,7 +151,7 @@ The **OSI Model** (Open Systems Interconnection) provides a standard framework f
 
 ### Why We Need a Communication Model
 
-- **Standard Framework**: Simplifies device and app communication.
+- **Standard Framework**: Simplifies device and app communication over a network (all devices can understand each other)
 - **Application Independence**: Applications operate independently of the underlying network.
 - **Simplified Network Management**: Facilitates easier upgrades.
 - **Decoupled Innovation**: Allows updates on each layer independently.
@@ -160,46 +160,79 @@ The **OSI Model** (Open Systems Interconnection) provides a standard framework f
 
 #### Layer 7: Application Layer
 - Directly provides network services to applications (e.g., HTTP, FTP, DNS).
+- end user layer
 
 #### Layer 6: Presentation Layer
 - Translates data into a readable format and handles encryption.
+- syntax user layer
+- e.g. ssl, ssh, imap, mpeg, jpeg
 
 #### Layer 5: Session Layer
 - Manages sessions between applications, establishing and terminating connections.
+- sync and send to port
+- API's, sockets, winsock
 
 #### Layer 4: Transport Layer
 - Ensures end-to-end communication and data integrity (e.g., TCP, UDP).
 
 #### Layer 3: Network Layer
-- Manages packet routing and forwarding (e.g., IP, ICMP).
+- Manages packet routing and forwarding of data (e.g.IP, ICMP, IPSec, IGMP).
 
 #### Layer 2: Data Link Layer
-- Ensures node-to-node data transfer and error detection (e.g., Ethernet, MAC addresses).
+- Ensures node-to-node data transfer and error detection (e.g., Ethernet, MAC addresses, PPP, Switch, Bridge).
+- Frames
 
 #### Layer 1: Physical Layer
 - Transmits raw bit streams over a physical medium (e.g., cables, wireless signals).
+- Physical structure
 
 ---
 
 ## Layer Details
 
 ### Layer 1: Physical Layer
-- **Function**: Transmit raw bit streams over physical media (e.g., cables, network interface cards).
+**Function**:
+- Transmit raw bit streams over physical media (e.g., cables, network interface cards).
+- No device addressing (all data processed by all devices)
 
 ### Layer 2: Data Link Layer
-- **Function**: Ensures node-to-node data transfer and detects errors from the physical layer.
+**Function**:
+- Ensures node-to-node data transfer and detects errors from the physical layer. Ensures data is transferred correctly between adjacent network nodes.
+- Ensures data packets are correctly sent/received between different network nodes.
+- puts data packets into frames (like an enevlope with an address ensuring it goes to the right place)
+- compnents: mac addresses, switches and bridges
 
 ### Layer 3: Network Layer
-- **Function**: Routes data packets to the recipient, managing paths through intermediate routers.
+**Function**:
+- How the data is sent to the recepient. 
+- Routes data packets to the recipient, managing paths through intermediate routers.
+- Manages packet forwarding including routing through intermediate routers.
+- Chooses best path for data to travel.
+- Components: IP addresses (handles where packets go to), routers
+- Data organised into packets (carries data to target)
 
 ### Layer 4: Transport Layer
-- **Function**: Provides reliable data transfer services, segmenting and reassembling data as needed.
+**Function**:
+- Provides reliable data transfer services to the upper layers, segmenting and reassembling data as needed.
+- End-to-end connextions
+- Components: TCP (provides reliable audit and error free data), UDP (less reliable and not guaranteed) 
 
 ### Layer 5: Session Layer
-- **Function**: Manages sessions between applications, establishing, maintaining, and terminating connections.
+**Function**:
+- Manages sessions between applications, establishing, maintaining (keeping session alive), and terminating connections.
+- Synch and send to port
+- API's, Sockets, Winsock
+- Components: Session management protocols e.g. RPC, NetBIOS etc
 
 ### Layer 6: Presentation Layer
-- **Function**: Translates data into a usable format and handles encryption.
+**Function**: 
+- Translates data between application layer and network layer
+- Ensures data is in a usable format and handles encryption.
+- aka syntax layer
+- Components: Encryption (ensure data security), data formatting 
 
 ### Layer 7: Application Layer
-- **Function**: Directly provides network services to applications.
+**Function**: 
+- Directly provides network services to applications.
+- End user layer
+- Components: HTTP (for access websites and web services), FTP (for trasferring files between different servers), SMTP (for sending emails)
