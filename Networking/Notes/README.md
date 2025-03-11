@@ -236,3 +236,45 @@ The **OSI Model** (Open Systems Interconnection) provides a standard framework f
 - Directly provides network services to applications.
 - End user layer
 - Components: HTTP (for access websites and web services), FTP (for trasferring files between different servers), SMTP (for sending emails)
+
+
+---
+
+## TCP/IP Model
+- A compressed format of OSI model with only 4 layers
+- Common model
+- Layers: Applciation, Transport, Internet, Network Access
+- Application: network applciations and protocols operate (e.g. http, tls, dns)
+- Transport: end-to-end communcation and data transfer between devices (e.g. TCP, UDP)
+- Internet: reposible for logical addressing and routing data across different networks (IP - handles delivery of data packets from source to destination across multiple networks)
+- Network access: compressed format of layer 1 and 2 of OSI model. Physical and data aspects e.g. ethernet, wireless
+
+
+## Ports and Protocols
+- ports are logical endpoints for communicatiion e.g. port 80 for http, port 443 for https
+- ports allow communication between devices, ensures data goes to the right place
+- protocols are rules governing data transmission (how it is formatted and transmitted) 
+
+## TCP
+- Ensures data reaches device accurately and in correct order, rules devices follow to communicate.
+- Connection oriented: agree to communicate before data is exchanged
+- requires a three way handshake where devices syncronises and acknowledge each other (agree to communicate).
+- reliable data transfer, TCP will resend data if data is lost/corrupted
+- use case: ensure data is delivered in order, error checking in data and control flow of data to prevent congestion. Used for any bidirectional communication (back and forth) e.g. web browsing, emails etc.
+
+## UDP
+- Connectionless: no former connection established between sender and receiver.
+- Simple protocol to send and receive data
+- No prior communication (data sent without establishing connection so no guaratee data reaches destination)
+- Each packet is sent independently
+- Fast but not reliable
+- use cases: video streaming, online gaming, vidoes. DNS and VPNs (some vpn protocols). Real time applications
+
+
+
+
+
+
+
+
+
