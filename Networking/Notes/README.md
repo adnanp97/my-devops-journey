@@ -270,6 +270,70 @@ The **OSI Model** (Open Systems Interconnection) provides a standard framework f
 - Fast but not reliable
 - use cases: video streaming, online gaming, vidoes. DNS and VPNs (some vpn protocols). Real time applications
 
+---
+
+## DNS (Domain name system)
+- DNS makes IP address human friendly, for us to keep track of websites.
+- Translates domain names to IP addresses.
+- Purpose: To simplify navigating the internet and access website/services.
+
+## DNS components
+### Name servers
+- Cruicial for DNS functionality
+- Loads DNS settings and configurations, and responds to your queries from clients or other servers about domain names.
+- Two typers, authoritative name servers and recursive name servers
+- Authoritative name servers: hold actual DNS records - provide the IP address for a domain name when queried.
+- Recursive name servers: Do no hold final answers, they query other name servers on behalf of the client to find the correct DNS record. They can capture the information of the DNS for future queries to speed things up.
+
+### Zone files
+- Store information about the domain
+- Help name servers answer queries about how to get to a domain if the name server is not available directly
+- Organise your DNS info in a readable and managed way, making it easier to handle DNS records.
+
+### Records
+- Entries in a zone file with specific information
+- Each record has specific info about hosts, name servers and various other resources
+- Components: Record name, TTL, Class, Type, Data
+
+<img width="1556" alt="Screenshot 2025-03-12 at 23 22 04" src="https://github.com/user-attachments/assets/a26e4537-78fc-4686-a447-3b9cb9b47987" />
+
+#### DNS Records (Different type of records)
+ - A = Maps a domain name to an IPv4 Address e.g. google.com -> 216.58.204.79
+ - AAAA = Maps a domain name to an IPv6 Address e.g. google.com -> 2a00:1450:4009:81d::200e
+ - CNAME (canonical name) = Alias of one name to another. It allows you to point multiple domain names to the same IP address. Simplifies DNS management e.g. www.google.com -> google.com
+ - MX - Specifies the mail server responsible for receiving email for the domain. Includes priority value. e.g. google.com -> mailserver.google.com
+ - TXT = Allows domain administrators to insert any text into DNS. Commonly used for verification purposed and to hold SPF (Sender Policy Framework) data. Uses: verification, SPF data, other metadata e.g. google.com -> "v=spf1 include.com ~all".
+
+
+## How does DNS work?
+1 - you type in a web address into your browser
+2 - browser sends a request to a local DNS resolver
+3 - DNS server does a query. Receives request and starts searching for the IP address.
+4 - First it checks its local cache (previously accessed)
+5 - Resolver queries a root server for the IP address (Root server does not yet know the IP of the domain).
+6 - The root server knows where to find the .com TDL domain server. So the DNS resolver queries the TDL Server.
+7 - The TDL server doesn't know the IP address but knows the authoritative server. So the DNS resolver queries the Authoritative Server 
+8 - Then the resolver queries the authoritative server which has the IP address.
+9 - IP address sent to the DNS resolver.
+10 - DNS resolver sends IP address to your browser allowing it to connect to the wen server.
+
+### DNS resoultion
+- The process of converting domain names into IP addresses
+
+### DNS hierarchy and Distribution
+- DNS Root: Top of hierarchy. Has high level info of where to find the top level domains underneath it.
+- Top level domains (TLD): Include familiar extensions e.g. .com .org .co.uk. For example the .com registry is managed by versign. Each TLD has info of domains within it's scope.
+- Authoritative name servers: each server hosts, zones for domains - they have the detailed DNS records for those domains. For example google.com or x.com have their own DNS records stored here (in the .com LTD)
+- Domain: each domain has a zone and zonefile. Zonefile is where all the specific information like IP addresses, mail servers of the domains are stored.
+
+### Domain Registrar vs DNS Hosting provider
+
+- DR: allows you to purchase and register domains. It communicated with the TDL registry to manage domain registrations. e.g. route53, godaddy, cloudflare etc
+- DNS HP: Operates DNS nameservers that host DNS Zones. Manage DNS records within these zones.
+
+When purchasing a domain, you need DNS Zone to be hosted on a DNS name server.
+
+
 
 
 
