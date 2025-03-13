@@ -196,5 +196,3 @@ The **OSI Model** (Open Systems Interconnection) provides a standard framework f
 | **TXT** | Stores verification and SPF data | google.com → "v=spf1 include.com ~all" |
 
 ---
-
-Your README file is now structured properly in Markdown with clean formatting. 🚀  
