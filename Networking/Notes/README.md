@@ -196,3 +196,71 @@ The **OSI Model** (Open Systems Interconnection) provides a standard framework f
 | **TXT** | Stores verification and SPF data | google.com → "v=spf1 include.com ~all" |
 
 ---
+
+## Network Debugging tools: 'nslookup' and 'dig'
+### nslookup
+- nslookup : tool used to query DNS servers
+- you can find info about dns records for that certain domain
+- syntax: nslookup [domain]
+
+### DIG (domain information groper)
+- flexible and much more detailed for creating DNS servers
+- syntax: dig [domain]
+
+Why do you need to know this as a devops engineer?
+ - Devops engineer use these tools to troubleshoot networking isseus.
+
+## /etc/hosts File
+- It is a local file on your computer
+- can be used to map domain names to IP addresses
+- takes precedence over DNS for specific entries
+- Format: IP_address domain_name
+
+## What is Routing?
+- refers to the process of determining which path is best to send data across the network (like a gps)
+- Importance: ensures data reaches its destination efficiently
+- Determine the best path and use routing tables to make best decisions
+
+why is it important for devop engineers?
+- network performance optimisation as it ensures data packets takes the most efficient path
+- ensures reliable application delivery
+- crucial for managing complex infrastructures
+
+### static routing vs dynamic routing
+static: routs are manually set up by network admins. Data travel down a fixed map. Reliable but not adaptable if there are changes or issues on the route. If route changes, must update manually. It is not scalable, only good for small networks.
+
+dynamic: uses algorithms and complex protocols (help routers decide the most efficient route) to automatically find the best route. Keeps data moving effieciently even if there are changes to the route/netowrk conditions. (like a smart gps). Scalable and adaptable, suitable for large networks e.g. new devices, issues.
+
+### common routing protocols
+routing protocols: automate process of determing best route for data to travel across the network to the destination. Allows data to take best path and reduce congestion, improving the overall network performance. They also improve network resillience by finding alternative paths.
+
+#### OSPF and BGP
+two most common routing protocols
+
+1 - OSPF (Open shortest path first): finds the shortest path, usually used in large organisations. it uses 'link state information', a complex system which is uses to make routing decisions. (considers the status of a network, the links and the cost to use them). Can quickly recalculate routes incase of any issue on the network.
+
+2 - BGP (Border gateway protocol): route data between different autonomous systems (large networks managed by single organisation. Uses a 'Path vector mechanism' (means that it maintains the path formation that gets updated dynamically as the network topology changes. Allows network admins to define routing policies based on various attributes.
+
+## subnetting & CIDR
+
+### subnetting
+
+subnetting is dividing one large network into smaller and more managaeble subnetworks. Improves network management and efficiency in managing different networks
+
+### CIDR (classless inter-domain routing)
+
+A method for allocation IP address and routing IP packets
+Format: IP_address/prefix_length e.g. 192.168.1.0/24
+
+### calculating subnets
+subnetting determines which oart of the IP address is the network portion and which part is the host portion.
+
+subnet mask: used to divide an IP address into a network and host portions.
+
+
+
+
+
+
+
+
